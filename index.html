@@ -10,12 +10,16 @@
     <meta name="description"
           content="The personal portfolio of Daniel P. Dougherty, Computer Science undergraduate seeking an on-site OJT opportunity.">
 
-    <link rel="stylesheet"
-          href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Static CSS path for GitHub Pages -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- JavaScript file -->
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
 
+    <!-- NAVIGATION -->
     <header class="navbar">
         <a href="#home" class="logo">D<span>.</span>Dougherty</a>
 
@@ -32,6 +36,7 @@
 
     <main>
 
+        <!-- HERO SECTION -->
         <section class="hero" id="home">
 
             <div class="hero-content">
@@ -78,7 +83,7 @@
 
                 <div class="image-frame">
                     <img
-                        src="{{ url_for('static', filename='images/profile.png') }}"
+                        src="./images/profile.png"
                         alt="Portrait of Daniel P. Dougherty"
                     >
                 </div>
@@ -91,661 +96,674 @@
 
         </section>
 
-        
-<!-- =========================
-     ABOUT ME
-========================== -->
 
-<section class="about-section" id="about">
+        <!-- ABOUT ME SECTION -->
+        <section class="about-section" id="about">
 
-    <div class="about-heading">
-        <p class="section-label">01 — ABOUT ME</p>
-        <h2>A little about <span>who I am.</span></h2>
-        <p class="about-intro">
-            I'm Daniel P. Dougherty, a fourth-year Bachelor of Science
-            in Computer Science student at Biliran Province State
-            University – Naval Campus.
-        </p>
-    </div>
+            <div class="about-heading">
+                <p class="section-label">01 — ABOUT ME</p>
 
-    <div class="about-grid">
+                <h2>A little about <span>who I am.</span></h2>
 
-        <div class="about-main">
-
-            <h3>Curious by nature. Always learning.</h3>
-
-            <p>
-                I'm interested in exploring how technology can solve
-                practical problems and improve the way people work.
-                My interests include software development, data analysis,
-                IT support, quality assurance, and emerging technologies.
-            </p>
-
-            <p>
-                I value honesty, reliability, adaptability, and the
-                willingness to learn. I may still be developing my
-                technical expertise, but I approach new challenges
-                with patience, curiosity, and a commitment to improving.
-            </p>
-
-            <p>
-                I'm currently looking for an on-site OJT opportunity
-                where I can gain hands-on experience, learn from
-                experienced professionals, and develop the practical
-                skills I will need for my future career. I believe
-                working directly with a team is an important step
-                before pursuing remote opportunities in the future.
-            </p>
-
-            <div class="about-location">
-                <span class="location-icon">⌖</span>
-                <div>
-                    <small>BASED IN</small>
-                    <strong>Caray-Caray, Naval, Biliran, Philippines</strong>
-                </div>
-            </div>
-
-        </div>
-
-
-        <aside class="about-details">
-
-            <div class="detail-item">
-                <span>EDUCATION</span>
-                <strong>Bachelor of Science in Computer Science</strong>
-                <small>Biliran Province State University – Naval Campus</small>
-            </div>
-
-            <div class="detail-item">
-                <span>ACADEMIC LEVEL</span>
-                <strong>Fourth Year</strong>
-            </div>
-
-            <div class="detail-item">
-                <span>CAREER INTERESTS</span>
-                <strong>Software Development</strong>
-                <strong>Data Analysis</strong>
-                <strong>IT Support</strong>
-                <strong>Quality Assurance & Testing</strong>
-            </div>
-
-            <div class="detail-item">
-                <span>CURRENT GOAL</span>
-                <strong>Seeking an On-Site OJT Opportunity</strong>
-            </div>
-
-        </aside>
-
-    </div>
-
-
-    <!-- SKILLS -->
-
-    <div class="skills-area">
-
-        <div class="skills-heading">
-            <p class="section-label">MY TECHNICAL INTERESTS</p>
-            <h3>Tools and technologies I'm familiar with.</h3>
-        </div>
-
-        <div class="skills-list">
-            <span>Python</span>
-            <span>Java</span>
-            <span>SQL</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>AI Tools & Applications</span>
-        </div>
-
-        <p class="skills-note">
-            My current experience includes HTML and some CSS.
-            I continue to develop my programming and technical skills
-            through academic work and personal projects.
-        </p>
-
-    </div>
-
-
-    <!-- NUMIFY CONTRIBUTION -->
-
-    <div class="about-experience">
-
-        <div class="experience-label">
-            <span class="section-label">ACADEMIC EXPERIENCE</span>
-            <span class="experience-tag">GROUP THESIS PROJECT</span>
-        </div>
-
-        <h3>NUMIFY — Gamified Numeracy Assessment System</h3>
-
-        <p>
-            As a contributor to our academic thesis project, I took
-            part in research-related activities and system development.
-            My responsibilities included preparing research documents,
-            helping coordinate school visits and communication with
-            mathematics teachers, and creating all of the system's
-            related flowcharts using draw.io.
-        </p>
-
-        <p>
-            This experience helped me develop my documentation,
-            communication, process visualization, and teamwork skills.
-        </p>
-
-    </div>
-
-</section>
-
-        
-<!-- =========================
-     PROJECTS & EXPERIENCE
-========================== -->
-
-<section class="projects-section" id="projects">
-
-    <div class="projects-heading">
-
-        <div>
-            <p class="section-label">02 — SELECTED WORK</p>
-
-            <h2>Things I've <span>worked on.</span></h2>
-
-            <p class="projects-intro">
-                A selection of academic work, personal projects,
-                and practical experiences that reflect my growth
-                as a Computer Science student.
-            </p>
-        </div>
-
-        <div class="project-count">
-            <span>03</span>
-            <small>FEATURED EXPERIENCES</small>
-        </div>
-
-    </div>
-
-
-    <!-- MAIN PROJECTS -->
-
-    <div class="project-grid">
-
-
-        <!-- PROJECT 1: NUMIFY -->
-
-        <article class="project-card">
-
-            <div class="project-visual numify-visual">
-
-                <span class="visual-label">ACADEMIC PROJECT / 01</span>
-
-                <div class="numify-preview">
-                    <span class="preview-mark">N.</span>
-                    <strong>NUMIFY</strong>
-                    <small>GAMIFIED NUMERACY ASSESSMENT</small>
-
-                    <div class="preview-bars">
-                        <span style="height: 35%"></span>
-                        <span style="height: 65%"></span>
-                        <span style="height: 48%"></span>
-                        <span style="height: 85%"></span>
-                        <span style="height: 70%"></span>
-                    </div>
-                </div>
-
-                <span class="visual-number">01</span>
-
-            </div>
-
-
-            <div class="project-content">
-
-                <div class="project-type">
-                    <span>GROUP THESIS PROJECT</span>
-                    <span>2026</span>
-                </div>
-
-                <h3>NUMIFY</h3>
-
-                <p class="project-subtitle">
-                    A Teacher-Assisted Gamified Numeracy Assessment
-                    System for Junior High School Students
+                <p class="about-intro">
+                    I'm Daniel P. Dougherty, a fourth-year Bachelor of Science
+                    in Computer Science student at Biliran Province State
+                    University – Naval Campus.
                 </p>
-
-                <p class="project-description">
-                    An academic system project designed to support
-                    mathematics assessment, learner performance
-                    monitoring, and learning support through
-                    gamification and topic-based recommendations.
-                </p>
-
-                <div class="contribution-details">
-
-                    <strong>MY CONTRIBUTIONS</strong>
-
-                    <ul>
-                        <li>Contributed to research papers and project documentation.</li>
-                        <li>Helped coordinate school research activities and communication with mathematics teachers.</li>
-                        <li>Created all system-related flowcharts using draw.io.</li>
-                        <li>Participated in the system development process.</li>
-                    </ul>
-
-                </div>
-
-                <div class="project-tags">
-                    <span>Research</span>
-                    <span>draw.io</span>
-                    <span>System Development</span>
-                    <span>Documentation</span>
-                </div>
-
-                <div class="project-footer">
-                    <span>ACADEMIC GROUP PROJECT</span>
-                    <span class="project-status">COMPLETED</span>
-                </div>
-
             </div>
 
-        </article>
+            <div class="about-grid">
 
+                <div class="about-main">
 
-        <!-- PROJECT 2: MEMEHUB -->
+                    <h3>Curious by nature. Always learning.</h3>
 
-        <article class="project-card">
+                    <p>
+                        I'm interested in exploring how technology can solve
+                        practical problems and improve the way people work.
+                        My interests include software development, data analysis,
+                        IT support, quality assurance, and emerging technologies.
+                    </p>
 
-            <div class="project-visual memehub-visual">
+                    <p>
+                        I value honesty, reliability, adaptability, and the
+                        willingness to learn. I may still be developing my
+                        technical expertise, but I approach new challenges
+                        with patience, curiosity, and a commitment to improving.
+                    </p>
 
-                <span class="visual-label">PERSONAL PROJECT / 02</span>
+                    <p>
+                        I'm currently looking for an on-site OJT opportunity
+                        where I can gain hands-on experience, learn from
+                        experienced professionals, and develop the practical
+                        skills I will need for my future career. I believe
+                        working directly with a team is an important step
+                        before pursuing remote opportunities in the future.
+                    </p>
 
-                <div class="memehub-preview">
-                    <div class="memehub-topbar">
-                        <strong>MEMEHUB</strong>
-                        <span>HOME &nbsp; JOKES &nbsp; CLIPS</span>
+                    <div class="about-location">
+                        <span class="location-icon">⌖</span>
+
+                        <div>
+                            <small>BASED IN</small>
+                            <strong>Caray-Caray, Naval, Biliran, Philippines</strong>
+                        </div>
                     </div>
 
-                    <div class="memehub-content">
-                        <small>WELCOME TO</small>
-                        <strong>MEME<br>HUB.</strong>
-                        <span>YOUR DAILY DOSE OF ENTERTAINMENT.</span>
-                    </div>
-
-                    <div class="memehub-blocks">
-                        <span>FUNNY JOKES</span>
-                        <span>SHORT CLIPS</span>
-                        <span>PHOTOS</span>
-                    </div>
                 </div>
 
-                <span class="visual-number">02</span>
+
+                <aside class="about-details">
+
+                    <div class="detail-item">
+                        <span>EDUCATION</span>
+                        <strong>Bachelor of Science in Computer Science</strong>
+                        <small>Biliran Province State University – Naval Campus</small>
+                    </div>
+
+                    <div class="detail-item">
+                        <span>ACADEMIC LEVEL</span>
+                        <strong>Fourth Year</strong>
+                    </div>
+
+                    <div class="detail-item">
+                        <span>CAREER INTERESTS</span>
+                        <strong>Software Development</strong>
+                        <strong>Data Analysis</strong>
+                        <strong>IT Support</strong>
+                        <strong>Quality Assurance & Testing</strong>
+                    </div>
+
+                    <div class="detail-item">
+                        <span>CURRENT GOAL</span>
+                        <strong>Seeking an On-Site OJT Opportunity</strong>
+                    </div>
+
+                </aside>
 
             </div>
 
 
-            <div class="project-content">
+            <!-- SKILLS -->
+            <div class="skills-area">
 
-                <div class="project-type">
-                    <span>PERSONAL WEB PROJECT</span>
-                    <span>WEB DEVELOPMENT</span>
+                <div class="skills-heading">
+                    <p class="section-label">MY TECHNICAL INTERESTS</p>
+                    <h3>Tools and technologies I'm familiar with.</h3>
                 </div>
 
-                <h3>MEMEHUB</h3>
-
-                <p class="project-subtitle">
-                    A Personal Entertainment Website
-                </p>
-
-                <p class="project-description">
-                    A personal website featuring funny jokes,
-                    short clips, and photos. This project gave me
-                    an opportunity to explore website structure,
-                    styling, and interactive web elements.
-                </p>
-
-                <div class="contribution-details">
-
-                    <strong>WHAT I WORKED ON</strong>
-
-                    <ul>
-                        <li>Created the website using HTML and CSS.</li>
-                        <li>Worked on the layout and presentation of website content.</li>
-                        <li>Explored interactive elements for browsing entertainment content.</li>
-                    </ul>
-
-                </div>
-
-                <div class="project-tags">
+                <div class="skills-list">
+                    <span>Python</span>
+                    <span>Java</span>
+                    <span>SQL</span>
                     <span>HTML</span>
                     <span>CSS</span>
-                    <span>Web Design</span>
+                    <span>AI Tools & Applications</span>
                 </div>
 
-                <div class="project-footer">
-                    <span>PERSONAL PROJECT</span>
+                <p class="skills-note">
+                    My current experience includes HTML and some CSS.
+                    I continue to develop my programming and technical skills
+                    through academic work and personal projects.
+                </p>
 
-                    <a
-                        href="https://danieldougherty0-png.github.io/my-static-website/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        VISIT WEBSITE ↗
-                    </a>
+            </div>
+
+
+            <!-- NUMIFY ACADEMIC EXPERIENCE -->
+            <div class="about-experience">
+
+                <div class="experience-label">
+                    <span class="section-label">ACADEMIC EXPERIENCE</span>
+                    <span class="experience-tag">GROUP THESIS PROJECT</span>
+                </div>
+
+                <h3>NUMIFY — Gamified Numeracy Assessment System</h3>
+
+                <p>
+                    As a contributor to our academic thesis project, I took
+                    part in research-related activities and system development.
+                    My responsibilities included preparing research documents,
+                    helping coordinate school visits and communication with
+                    mathematics teachers, and creating all of the system's
+                    related flowcharts using draw.io.
+                </p>
+
+                <p>
+                    This experience helped me develop my documentation,
+                    communication, process visualization, and teamwork skills.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS & EXPERIENCE SECTION -->
+        <section class="projects-section" id="projects">
+
+            <div class="projects-heading">
+
+                <div>
+                    <p class="section-label">02 — SELECTED WORK</p>
+
+                    <h2>Things I've <span>worked on.</span></h2>
+
+                    <p class="projects-intro">
+                        A selection of academic work, personal projects,
+                        and practical experiences that reflect my growth
+                        as a Computer Science student.
+                    </p>
+                </div>
+
+                <div class="project-count">
+                    <span>03</span>
+                    <small>FEATURED EXPERIENCES</small>
                 </div>
 
             </div>
 
-        </article>
 
-    </div>
+            <!-- MAIN PROJECTS -->
+            <div class="project-grid">
 
 
-    <!-- ADDITIONAL EXPERIENCE -->
+                <!-- PROJECT 1: NUMIFY -->
+                <article class="project-card">
 
-    <div class="additional-experience">
+                    <div class="project-visual numify-visual">
 
-        <div class="additional-heading">
-            <p class="section-label">ADDITIONAL EXPERIENCE</p>
-            <h3>Small moments, valuable lessons.</h3>
-        </div>
+                        <span class="visual-label">ACADEMIC PROJECT / 01</span>
 
-        <article class="experience-card">
+                        <div class="numify-preview">
+                            <span class="preview-mark">N.</span>
+                            <strong>NUMIFY</strong>
+                            <small>GAMIFIED NUMERACY ASSESSMENT</small>
 
-            <div class="experience-number">03</div>
+                            <div class="preview-bars">
+                                <span style="height: 35%"></span>
+                                <span style="height: 65%"></span>
+                                <span style="height: 48%"></span>
+                                <span style="height: 85%"></span>
+                                <span style="height: 70%"></span>
+                            </div>
+                        </div>
 
-            <div class="experience-content">
+                        <span class="visual-number">01</span>
 
-                <span class="experience-category">
-                    PRACTICAL CODING ACTIVITY
-                </span>
+                    </div>
 
-                <h4>CSS Webinar — Bug Identification</h4>
 
-                <p>
-                    During a webinar featuring a speaker from Japan,
-                    I participated in a coding activity involving
-                    identifying and fixing a website bug. I was
-                    recognized for finding the bug first and received
-                    an anime figure as a prize.
-                </p>
+                    <div class="project-content">
 
-                <div class="project-tags">
-                    <span>CSS</span>
-                    <span>Debugging</span>
-                    <span>Problem Solving</span>
+                        <div class="project-type">
+                            <span>GROUP THESIS PROJECT</span>
+                            <span>2026</span>
+                        </div>
+
+                        <h3>NUMIFY</h3>
+
+                        <p class="project-subtitle">
+                            A Teacher-Assisted Gamified Numeracy Assessment
+                            System for Junior High School Students
+                        </p>
+
+                        <p class="project-description">
+                            An academic system project designed to support
+                            mathematics assessment, learner performance
+                            monitoring, and learning support through
+                            gamification and topic-based recommendations.
+                        </p>
+
+                        <div class="contribution-details">
+
+                            <strong>MY CONTRIBUTIONS</strong>
+
+                            <ul>
+                                <li>Contributed to research papers and project documentation.</li>
+                                <li>Helped coordinate school research activities and communication with mathematics teachers.</li>
+                                <li>Created all system-related flowcharts using draw.io.</li>
+                                <li>Participated in the system development process.</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="project-tags">
+                            <span>Research</span>
+                            <span>draw.io</span>
+                            <span>System Development</span>
+                            <span>Documentation</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span>ACADEMIC GROUP PROJECT</span>
+                            <span class="project-status">COMPLETED</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2: MEMEHUB -->
+                <article class="project-card">
+
+                    <div class="project-visual memehub-visual">
+
+                        <span class="visual-label">PERSONAL PROJECT / 02</span>
+
+                        <div class="memehub-preview">
+
+                            <div class="memehub-topbar">
+                                <strong>MEMEHUB</strong>
+                                <span>HOME &nbsp; JOKES &nbsp; CLIPS</span>
+                            </div>
+
+                            <div class="memehub-content">
+                                <small>WELCOME TO</small>
+                                <strong>MEME<br>HUB.</strong>
+                                <span>YOUR DAILY DOSE OF ENTERTAINMENT.</span>
+                            </div>
+
+                            <div class="memehub-blocks">
+                                <span>FUNNY JOKES</span>
+                                <span>SHORT CLIPS</span>
+                                <span>PHOTOS</span>
+                            </div>
+
+                        </div>
+
+                        <span class="visual-number">02</span>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <div class="project-type">
+                            <span>PERSONAL WEB PROJECT</span>
+                            <span>WEB DEVELOPMENT</span>
+                        </div>
+
+                        <h3>MEMEHUB</h3>
+
+                        <p class="project-subtitle">
+                            A Personal Entertainment Website
+                        </p>
+
+                        <p class="project-description">
+                            A personal website featuring funny jokes,
+                            short clips, and photos. This project gave me
+                            an opportunity to explore website structure,
+                            styling, and interactive web elements.
+                        </p>
+
+                        <div class="contribution-details">
+
+                            <strong>WHAT I WORKED ON</strong>
+
+                            <ul>
+                                <li>Created the website using HTML and CSS.</li>
+                                <li>Worked on the layout and presentation of website content.</li>
+                                <li>Explored interactive elements for browsing entertainment content.</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Web Design</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span>PERSONAL PROJECT</span>
+
+                            <a
+                                href="https://danieldougherty0-png.github.io/my-static-website/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                VISIT WEBSITE ↗
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- ADDITIONAL EXPERIENCE -->
+            <div class="additional-experience">
+
+                <div class="additional-heading">
+                    <p class="section-label">ADDITIONAL EXPERIENCE</p>
+                    <h3>Small moments, valuable lessons.</h3>
                 </div>
 
+                <article class="experience-card">
+
+                    <div class="experience-number">03</div>
+
+                    <div class="experience-content">
+
+                        <span class="experience-category">
+                            PRACTICAL CODING ACTIVITY
+                        </span>
+
+                        <h4>CSS Webinar — Bug Identification</h4>
+
+                        <p>
+                            During a webinar featuring a speaker from Japan,
+                            I participated in a coding activity involving
+                            identifying and fixing a website bug. I was
+                            recognized for finding the bug first and received
+                            an anime figure as a prize.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>CSS</span>
+                            <span>Debugging</span>
+                            <span>Problem Solving</span>
+                        </div>
+
+                        <a
+                            href="https://github.com/danieldougherty0-png/css-webinar"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="experience-link"
+                        >
+                            VIEW WEBINAR REPOSITORY ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CERTIFICATES SECTION -->
+        <section class="certificates-section" id="certificates">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">03 — ACHIEVEMENTS</p>
+
+                    <h2>Learning never <span>stops.</span></h2>
+
+                    <p class="section-description">
+                        A collection of certifications reflecting my interest
+                        in technology, continuous learning, and professional growth.
+                    </p>
+                </div>
+
+                <div class="certificate-count">
+                    <span>03</span>
+                    <small>FEATURED CERTIFICATES</small>
+                </div>
+
+            </div>
+
+
+            <div class="certificate-grid">
+
+
+                <!-- CERTIFICATE 1: APPLICATIONS OF AI -->
+                <article class="certificate-card">
+
+                    <a
+                        href="./documents/certificates/Applications%20of%20Ai.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="certificate-preview"
+                        aria-label="View Applications of AI certificate"
+                    >
+                        <img
+                            src="./images/certificates/Applications%20of%20Ai.jpg"
+                            alt="Applications of AI certificate from Great Learning Academy"
+                            loading="lazy"
+                        >
+
+                        <span class="preview-overlay">
+                            <span>↗ View Certificate</span>
+                        </span>
+                    </a>
+
+                    <div class="certificate-info">
+
+                        <span class="certificate-category">ARTIFICIAL INTELLIGENCE</span>
+
+                        <h3>Applications of AI</h3>
+
+                        <p class="certificate-issuer">
+                            Great Learning Academy
+                        </p>
+
+                        <div class="certificate-meta">
+                            <span>November 2024</span>
+
+                            <a
+                                href="./documents/certificates/Applications%20of%20Ai.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View PDF ↗
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CERTIFICATE 2: AI LITERACY -->
+                <article class="certificate-card">
+
+                    <a
+                        href="./documents/certificates/Introduction%20to%20AI%20Literacy%20and%20Responsible%20Use.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="certificate-preview"
+                        aria-label="View Introduction to AI Literacy certificate"
+                    >
+                        <img
+                            src="./images/certificates/Introduction%20to%20AI%20Literacy%20and%20Responsible%20Use.jpg"
+                            alt="Introduction to AI Literacy and Responsible Use certificate"
+                            loading="lazy"
+                        >
+
+                        <span class="preview-overlay">
+                            <span>↗ View Certificate</span>
+                        </span>
+                    </a>
+
+                    <div class="certificate-info">
+
+                        <span class="certificate-category">AI LITERACY</span>
+
+                        <h3>Introduction to AI Literacy and Responsible Use</h3>
+
+                        <p class="certificate-issuer">
+                            Micro-Credentials Course
+                        </p>
+
+                        <div class="certificate-meta">
+                            <span>September 14, 2026</span>
+
+                            <a
+                                href="./documents/certificates/Introduction%20to%20AI%20Literacy%20and%20Responsible%20Use.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View PDF ↗
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CERTIFICATE 3: NETWORKING BASICS -->
+                <article class="certificate-card">
+
+                    <a
+                        href="./documents/certificates/Network%20Basics.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="certificate-preview"
+                        aria-label="View Networking Basics certificate"
+                    >
+                        <img
+                            src="./images/certificates/Network%20Basics.jpg"
+                            alt="Networking Basics certificate from Cisco Networking Academy"
+                            loading="lazy"
+                        >
+
+                        <span class="preview-overlay">
+                            <span>↗ View Certificate</span>
+                        </span>
+                    </a>
+
+                    <div class="certificate-info">
+
+                        <span class="certificate-category">NETWORKING</span>
+
+                        <h3>Networking Basics</h3>
+
+                        <p class="certificate-issuer">
+                            Cisco Networking Academy
+                        </p>
+
+                        <div class="certificate-meta">
+                            <span>May 13, 2026</span>
+
+                            <a
+                                href="./documents/certificates/Network%20Basics.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View PDF ↗
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+
+            <div class="contact-heading">
+
+                <p class="section-label">04 — GET IN TOUCH</p>
+
+                <h2>Let's start a <span>conversation.</span></h2>
+
+                <p>
+                    Interested in discussing an opportunity, collaborating
+                    on a project, or simply connecting? Feel free to reach out.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
                 <a
-                    href="https://github.com/danieldougherty0-png/css-webinar"
+                    href="mailto:daniel.dougherty0@gmail.com"
+                    class="contact-card"
+                >
+                    <span class="contact-icon">✉</span>
+
+                    <div>
+                        <small>EMAIL</small>
+                        <strong>daniel.dougherty0@gmail.com</strong>
+                    </div>
+
+                    <span class="contact-arrow">↗</span>
+                </a>
+
+
+                <a
+                    href="tel:+639356217839"
+                    class="contact-card"
+                >
+                    <span class="contact-icon">☎</span>
+
+                    <div>
+                        <small>PHONE</small>
+                        <strong>+63 935 621 7839</strong>
+                    </div>
+
+                    <span class="contact-arrow">↗</span>
+                </a>
+
+
+                <a
+                    href="https://github.com/danieldougherty0-png"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="experience-link"
+                    class="contact-card"
                 >
-                    VIEW WEBINAR REPOSITORY ↗
+                    <span class="contact-icon">⌘</span>
+
+                    <div>
+                        <small>GITHUB</small>
+                        <strong>danieldougherty0-png</strong>
+                    </div>
+
+                    <span class="contact-arrow">↗</span>
+                </a>
+
+
+                <a
+                    href="https://www.facebook.com/LonelyWhiteDude"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+                    <span class="contact-icon">f</span>
+
+                    <div>
+                        <small>FACEBOOK</small>
+                        <strong>Connect with me</strong>
+                    </div>
+
+                    <span class="contact-arrow">↗</span>
                 </a>
 
             </div>
 
-        </article>
 
-    </div>
-
-</section>
- 
-<section class="certificates-section" id="certificates">
-
-    <div class="section-heading">
-        <div>
-            <p class="section-label">03 — ACHIEVEMENTS</p>
-            <h2>Learning never <span>stops.</span></h2>
-            <p class="section-description">
-                A collection of certifications reflecting my interest
-                in technology, continuous learning, and professional growth.
-            </p>
-        </div>
-
-        <div class="certificate-count">
-            <span>03</span>
-            <small>FEATURED CERTIFICATES</small>
-        </div>
-    </div>
-
-    <div class="certificate-grid">
-
-        <!-- CERTIFICATE 1 -->
-        <article class="certificate-card">
-
-            <a
-                href="{{ url_for('static', filename='documents/certificates/Applications of Ai.pdf') }}"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="certificate-preview"
-                aria-label="View Applications of AI certificate"
-            >
-                <img
-                    src="{{ url_for('static', filename='images/certificates/Applications of Ai.jpg') }}"
-                    alt="Applications of AI certificate from Great Learning Academy"
-                    loading="lazy"
-                >
-                <span class="preview-overlay">
-                    <span>↗ View Certificate</span>
-                </span>
-            </a>
-
-            <div class="certificate-info">
-                <span class="certificate-category">ARTIFICIAL INTELLIGENCE</span>
-
-                <h3>Applications of AI</h3>
-
-                <p class="certificate-issuer">
-                    Great Learning Academy
-                </p>
-
-                <div class="certificate-meta">
-                    <span>November 2024</span>
-                    <a
-                        href="{{ url_for('static', filename='documents/certificates/Applications of Ai.pdf') }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View PDF ↗
-                    </a>
-                </div>
+            <div class="contact-location">
+                <span>⌖</span>
+                <p>Caray-Caray, Naval, Biliran, Philippines</p>
             </div>
 
-        </article>
 
-
-        <!-- CERTIFICATE 2 -->
-        <article class="certificate-card">
-
-            <a
-                href="{{ url_for('static', filename='documents/certificates/Introduction to AI Literacy and Responsible Use.pdf') }}"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="certificate-preview"
-                aria-label="View Introduction to AI Literacy certificate"
-            >
-                <img
-                    src="{{ url_for('static', filename='images/certificates/Introduction to AI Literacy and Responsible Use.jpg') }}"
-                    alt="Introduction to AI Literacy and Responsible Use certificate"
-                    loading="lazy"
-                >
-                <span class="preview-overlay">
-                    <span>↗ View Certificate</span>
-                </span>
-            </a>
-
-            <div class="certificate-info">
-                <span class="certificate-category">AI LITERACY</span>
-
-                <h3>Introduction to AI Literacy and Responsible Use</h3>
-
-                <p class="certificate-issuer">
-                    Micro-Credentials Course
-                </p>
-
-                <div class="certificate-meta">
-                    <span>September 14, 2026</span>
-                    <a
-                        href="{{ url_for('static', filename='documents/certificates/Introduction to AI Literacy and Responsible Use.pdf') }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View PDF ↗
-                    </a>
-                </div>
+            <div class="contact-availability">
+                <span class="status-dot"></span>
+                Currently open to on-site OJT opportunities.
             </div>
 
-        </article>
-
-
-        <!-- CERTIFICATE 3 -->
-        <article class="certificate-card">
-
-            <a
-                href="{{ url_for('static', filename='documents/certificates/Network Basics.pdf') }}"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="certificate-preview"
-                aria-label="View Networking Basics certificate"
-            >
-                <img
-                    src="{{ url_for('static', filename='images/certificates/Network Basics.jpg') }}"
-                    alt="Networking Basics certificate from Cisco Networking Academy"
-                    loading="lazy"
-                >
-                <span class="preview-overlay">
-                    <span>↗ View Certificate</span>
-                </span>
-            </a>
-
-            <div class="certificate-info">
-                <span class="certificate-category">NETWORKING</span>
-
-                <h3>Networking Basics</h3>
-
-                <p class="certificate-issuer">
-                    Cisco Networking Academy
-                </p>
-
-                <div class="certificate-meta">
-                    <span>May 13, 2026</span>
-                    <a
-                        href="{{ url_for('static', filename='documents/certificates/Network Basics.pdf') }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View PDF ↗
-                    </a>
-                </div>
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-   
-<!-- =========================
-     CONTACT
-========================== -->
-
-<section class="contact-section" id="contact">
-
-    <div class="contact-heading">
-
-        <p class="section-label">04 — GET IN TOUCH</p>
-
-        <h2>Let's start a <span>conversation.</span></h2>
-
-        <p>
-            Interested in discussing an opportunity, collaborating
-            on a project, or simply connecting? Feel free to reach out.
-        </p>
-
-    </div>
-
-
-    <div class="contact-grid">
-
-        <a href="mailto:daniel.dougherty0@gmail.com"
-           class="contact-card">
-
-            <span class="contact-icon">✉</span>
-
-            <div>
-                <small>EMAIL</small>
-                <strong>daniel.dougherty0@gmail.com</strong>
-            </div>
-
-            <span class="contact-arrow">↗</span>
-
-        </a>
-
-
-        <a href="tel:+639356217839"
-           class="contact-card">
-
-            <span class="contact-icon">☎</span>
-
-            <div>
-                <small>PHONE</small>
-                <strong>+63 935 621 7839</strong>
-            </div>
-
-            <span class="contact-arrow">↗</span>
-
-        </a>
-
-
-        <a href="https://github.com/danieldougherty0-png"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="contact-card">
-
-            <span class="contact-icon">⌘</span>
-
-            <div>
-                <small>GITHUB</small>
-                <strong>danieldougherty0-png</strong>
-            </div>
-
-            <span class="contact-arrow">↗</span>
-
-        </a>
-
-
-        <a href="https://www.facebook.com/LonelyWhiteDude"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="contact-card">
-
-            <span class="contact-icon">f</span>
-
-            <div>
-                <small>FACEBOOK</small>
-                <strong>Connect with me</strong>
-            </div>
-
-            <span class="contact-arrow">↗</span>
-
-        </a>
-
-    </div>
-
-
-    <div class="contact-location">
-        <span>⌖</span>
-        <p>Caray-Caray, Naval, Biliran, Philippines</p>
-    </div>
-
-
-    <div class="contact-availability">
-        <span class="status-dot"></span>
-        Currently open to on-site OJT opportunities.
-    </div>
-
-</section>
+        </section>
 
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 Daniel P. Dougherty. Built with curiosity.</p>
     </footer>
